@@ -1,0 +1,114 @@
+/* タブレット*/
+
+@media screen and (max-width: 1000px) {
+
+    html {
+        font-size: 100%;
+    }
+
+    /* header*/
+
+    header img {
+        width: 230px;
+    }
+
+    /* all*/
+
+    .fit {
+        padding-bottom: 100px;
+    }
+
+    .fit h1 {
+        width: 100%;
+        margin-bottom: 100px;
+        text-align: center;
+        font-size: 1.9em;
+    }
+
+    .fit li {
+        font-size: 1.7em;
+    }
+
+    .giya {
+        width: 95%;
+        min-width: 600px;
+    }
+
+    .giya h2 {
+        font-size: 2.2rem;
+    }
+
+    .giya h3 {
+        font-size: 1.9rem;
+    }
+
+    .giya p {
+        margin: 100px 0;
+        padding: 0;
+        font-size: 1.7rem;
+    }
+    
+}
+
+/* スマートフォン*/
+
+@media screen and (max-width: 500px) {
+
+    /* header*/
+
+    header img {
+        width: 180px;
+    }
+
+    /* all*/
+
+    .fit {
+        width: 95%;
+        min-width: 300px;
+        padding-top: 200px;
+    }
+
+    .fit h1 {
+        margin-bottom: 50px;
+        font-size: 1.3em;
+    }
+
+    .fit li {
+        width: 80%;
+        margin: 20px 0 20px 50%;
+        padding: 10px;
+        transform: translateX(-50%);
+        font-size: 1.2em;
+        animation: none;
+    }
+
+    .giya {
+        min-width: 300px;
+        padding-top: 200px;
+        padding-bottom: 100px;
+    }
+
+    .giya h2 {
+        white-space: nowrap;
+        font-size: 1.4rem;
+    }
+
+    .giya h3 {
+        margin-top: 70px;
+        font-size: 1.2rem;
+    }
+
+    .giya p {
+        margin: 70px 0;
+        font-size: 1.1rem;
+    }
+
+    footer {
+        height: 50px;
+    }
+
+    footer p {
+        font-size: 1rem;
+    }
+    
+}

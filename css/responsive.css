@@ -1,0 +1,108 @@
+/* タブレット*/
+
+@media screen and (max-width: 1000px) {
+
+    /* header*/
+
+    header img {
+        width: 230px;
+    }
+
+    /* main*/
+
+    main h1 {
+        font-size: 1.8em;
+    }
+
+    main a {
+        padding-top: 20px;
+        font-size: 1.9em;
+    }
+
+    main a span {
+        bottom: 40px;
+        font-size: 15px;
+    }
+
+    /* footer*/
+
+    footer {
+        height: 100px;
+    }
+
+    footer p {
+        padding-top: 15px;
+        font-size: 16px;
+    }
+
+    footer a {
+        margin: 5px 0 13px 0;
+        font-size: 25px;
+    }
+
+}
+
+/* タブレット小*/
+
+@media screen and (max-width: 700px) {
+
+    /* header*/
+
+    header img {
+        width: 200px;
+    }
+
+    /* main*/
+
+    main a {
+        width: 40%;
+        padding-top: 15px;
+        left: 30%;
+        font-size: 1.7em;
+    }
+
+    main a span {
+        bottom: 35px;
+        font-size: 13px;
+    }
+
+    /* footer*/
+
+    footer {
+        height: 90px;
+    }
+
+    footer p {
+        font-size: 14px;
+    }
+    
+}
+
+/* スマートフォン*/
+
+@media screen and (max-width: 700px) {
+
+    /* header*/
+
+    header img {
+        width: 180px;
+    }
+
+    /* main*/
+
+    main h1 {
+        font-size: 1.7em;
+    }
+
+    main a {
+        width: 50%;
+        padding-top: 14px;
+        left: 25%;
+        font-size: 1.6em;
+    }
+
+    main a span {
+        bottom: 32px;
+    }
+
+}

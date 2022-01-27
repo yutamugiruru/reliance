@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reliance</title>
+    <link rel="stylesheet" href="css/q.css">
+    <link rel="stylesheet" href="css/qres.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div class="wrap">
+        <div class="all">
+            <header>
+                <img src="./img/reliance1.png" alt="">
+            </header>
+
+            <img src="./img/reliance2.jpg" alt="" class="reliance_img">
+            <div class="fit">
+                <h1></h1>
+                <ul></ul>
+            </div>
+        </div>
+
+        <div class="clone">
+            <header>
+                <img src="./img/reliance1.png" alt="">
+            </header>
+
+            <img src="./img/reliance3.jpg" alt="" class="answer_img">
+
+            <div class="giya" id="put_a1">
+                <h2>あなたの依存度は<span data-point-num></span>％です！</h2>
+                <h3>早いうちに引かれる人間です</h3>
+                <p>
+                    あなたは相手への依存が強すぎて早いうちに引かれてしまいます。<br>
+                    特に、交際した時に依存は発揮されます。<br>
+                    相手への好意が強すぎて、ストーカー行為に走らないように気をつけましょう。
+                </p>
+            </div>
+
+            <div class="giya" id="put_a2">
+                <h2>あなたの依存度は<span data-point-num></span>％です！</h2>
+                <h3>あなたは都合のいい人間です</h3>
+                <p>
+                    あなたは好意を寄せている異性に都合よく扱われるタイプです。<br>
+                    貢ぎ癖・母性本能が強く、相手からするとカモのような存在です。<br>
+                    サンクコストを意識して生活することをお勧めします。
+                </p>
+            </div>
+
+            <div class="giya" id="put_a3">
+                <h2>あなたの依存度は<span data-point-num></span>％です！</h2>
+                <h3>途中で抜け出せる人間です</h3>
+                <p>
+                    あなたは依存心は強いですが、途中で自力で抜け出せます。<br>
+                    しかし、気づいた時にはもう遅いかもしれません。<br>
+                    交際前からおかしい場所を見つけ、疑う力をつけましょう。
+                </p>
+            </div>
+
+            <div class="giya" id="put_a4">
+                <h2>あなたの依存度は<span data-point-num></span>％です！</h2>
+                <h3>早いうちに抜け出せる人間です</h3>
+                <p>
+                    あなたの依存度は一般レベルです。<br>
+                    自分が大きく変化している事に気が付く事ができるでしょう。<br>
+                    もう少し、自分自身を知ることを重要視しましょう。
+                </p>
+            </div>
+
+            <div class="giya" id="put_a5">
+                <h2>あなたの依存度は<span data-point-num></span>％です！</h2>
+                <h3>あなたは依存される人間です</h3>
+                <p>
+                    あなたは他人の違和感を疑うことができます。<br>
+                    また、相手からの依存を受け入れるため、依存されやすいです。<br>
+                    そのため、相手からの攻撃に注意しましょう。
+                </p>
+            </div>
+
+            <div class="giya" id="put_a6">
+                <h2>あなたの依存度は<span data-point-num></span>％です！</h2>
+                <h3>サバサバし過ぎな人間です</h3>
+                <p>
+                    あなたは依存を知らず、サバサバしすぎています。<br>
+                    常に他人を疑い、信じようとしません。<br>
+                    もう少し、人を信じる事に意識を向けると恋愛が楽になるでしょう。
+                </p>
+            </div>
+        </div>
+
+        <footer>
+            <p>© 2021 kamui allright</p>
+        </footer>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(function() {
+
+            let count = 0;
+            let point = 0;
+            const list = [
+                {
+                    'title':'この中で一番当てはまる物を選んでください',
+                    'answer':[
+                    '依存したことがある',
+                    '依存したことが無い',
+                    '絶対依存しない'
+                    ],
+                    'point':[2,5,10]
+                },
+                {
+                    'title':'異性にお願いされた時に当てはまる物を選んでください',
+                    'answer':[
+                    '承諾する',
+                    '絶対に断る',
+                    '容姿による'
+                    ],
+                    'point':[10,1,5]
+                },
+                {
+                    'title':'他人からの思われ方に当てはまる物を選んでください',
+                    'answer':[
+                    '好かれるほうだ',
+                    '嫌われるほうだ',
+                    '自分は空気だ'
+                    ],
+                    'point':[0,5,10]
+                },
+                {
+                    'title':'この中で一番当てはまる物を選んでください',
+                    'answer':[
+                    '恋愛を欲している',
+                    '恋愛は悪だ',
+                    '興味ない'
+                    ],
+                    'point':[0,5,10]
+                },
+                {
+                    'title':'この中で一番当てはまる物を選んでください',
+                    'answer':[
+                    '推しがいる',
+                    '推しはいない',
+                    '推しとかバカだ'
+                    ],
+                    'point':[10,0,3]
+                },
+                {
+                    'title':'あなたの仕事は人の為になりますか？',
+                    'answer':[
+                    'もちろん！',
+                    '考えたことない',
+                    '自分の為'
+                    ],
+                    'point':[10,3,1]
+                },
+                {
+                    'title':'あなたが異性に対して見る点は？',
+                    'answer':[
+                    '外見でしょ',
+                    '中身を見たい',
+                    'フィーリング'
+                    ],
+                    'point':[1,6,10]
+                },
+                {
+                    'title':'あなたは異性に興味がありますか？',
+                    'answer':[
+                    '勿論ある',
+                    'そもそもない',
+                    '異性は嫌いだ'
+                    ],
+                    'point':[6,1,2]
+                },
+                {
+                    'title':'あなたの交際経験を教えてください',
+                    'answer':[
+                    '0～2人',
+                    '3～5人',
+                    '5人以上'
+                    ],
+                    'point':[10,4,1]
+                },
+                {
+                    'title':'最長の交際期間を教えてください',
+                    'answer':[
+                    '1カ月以内',
+                    '6カ月以内',
+                    '6カ月以上'
+                    ],
+                    'point':[9,3,6]
+                }
+            ];
+
+            function volt(count){
+                $('li').remove();
+                $('h1').text(list[count]['title']);
+                list[count]['answer'].forEach(function(text){
+                    const li = `<li>${text}</li>`;
+                    $('ul').append(li);
+                });
+            }
+            volt(0)
+
+            function pointGet(li_index){
+                switch (li_index){
+                    case 0:
+                        return list[count]['point'][0];
+                        break;
+                    case 1:
+                        return list[count]['point'][1];
+                        break;
+                    case 2:
+                        return list[count]['point'][2];
+                        break;
+                }
+            }
+
+            $('.fit').on('click','li',function(){
+                const li_index = $('li').index(this);
+                point += pointGet(li_index);
+                console.log(point);
+                if (count < list.length-1){
+                    count++;
+                    volt(count);
+                }else{
+                    $('.all').css('display','none');
+                    $('.clone').css('display','block');
+                    $('[data-point-num').text(point);
+                    if (point >= 90){
+                        $('#put_a1').css('display','block');
+                    }else if (point < 90 && point >= 70){
+                        $('#put_a2').css('display','block');
+                    }else if (point < 70 && point >= 50){
+                        $('#put_a3').css('display','block');
+                    }else if (point < 50 && point >= 30){
+                        $('#put_a4').css('display','block');
+                    }else if (point < 30 && point >= 10){
+                        $('#put_a5').css('display','block');
+                    }else {
+                        $('#put_a6').css('display','block');
+                    }
+                    console.log("end");
+                }
+            });
+
+        });
+    </script>
+    
+</body>
+</html>
