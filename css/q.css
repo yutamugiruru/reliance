@@ -66,9 +66,9 @@ header img {
         transform: translateY(50px);
     }
 
-    80%{
-        opacity: 0.6;
-        transform: translateY(30px);
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
     }
 }
 
@@ -93,10 +93,6 @@ header img {
     background-color: rgba(160, 76, 129, 0.8);
     color: rgb(255, 255, 255);
     animation: animationTarget 1.5s;
-}
-
-.fit li:hover {
-    background-color: rgba(40, 40, 40, 0.65);
 }
 
 /* clone*/
